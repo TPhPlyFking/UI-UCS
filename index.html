@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>8 Puzzle - UCS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>8 Puzzle - UCS</h1>
+  <p>Ô trống đi U, D tốn 1 · L, R tốn 2 · Đích: 123456780</p>
+
+  <p>
+    Bảng ban đầu: <input id="start" value="123406758" maxlength="9" size="10">
+    <button id="btnApply">Áp dụng</button>
+  </p>
+
+  <table id="board"></table>
+
+  <p>
+    <button id="btnStep">Step</button>
+    <button id="btnRun">Chạy hết</button>
+    <button id="btnReset">Reset</button>
+  </p>
+
+  <p>Đang xét: <span id="now">-</span></p>
+  <p>PATH_COST: <span id="cost">0</span> · Đã xét: <span id="nExplored">0</span> · Frontier: <span id="nFrontier">0</span></p>
+  <p>Kết quả: <span id="result">-</span></p>
+
+  <h3>Frontier (PATH_COST nhỏ nhất ở trên)</h3>
+  <pre id="frontier"></pre>
+
+  <h3>Log</h3>
+  <pre id="log"></pre>
+
+  <script src="script.js"></script>
+</body>
+</html>
